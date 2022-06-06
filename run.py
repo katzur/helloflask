@@ -12,12 +12,12 @@ def index():
 
 @app.route("/about")
 def about():
-    return render_template("about.html", page_title="About")
+    return render_template("about.html", page_title="About", list_of_numbers=[1, 2, 3])
 
 
 @app.route("/contact")
 def contact():
-    return render_template("contact.html", page_title="Contact")
+    return render_template("contact.html", page_title="Contact Us")
 
 
 @app.route("/careers")
